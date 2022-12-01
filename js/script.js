@@ -38,6 +38,8 @@ circles[itemActive].classList.add('active');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
+// **********************************************
+
 next.addEventListener('click', function(){
 
     if (itemActive < imagesArray.length -1) {
@@ -45,10 +47,13 @@ next.addEventListener('click', function(){
     //verifico l'elemento attivo (itemActive)
     items[itemActive].classList.remove('active');
     circles[itemActive].classList.remove('active');
+
     //incremento il suo valore di 1
     itemActive++;
+
     //aggiungere la class active al nuovo elemento dell'array items e la vado a rimuovere da quello precedente
     //stessa cosa per i cerchi
+
     items[itemActive].classList.add('active');
     circles[itemActive].classList.add('active');
 
@@ -59,16 +64,21 @@ next.addEventListener('click', function(){
     //verifico l'elemento attivo (itemActive)
     items[itemActive].classList.remove('active');
     circles[itemActive].classList.remove('active');
+
     //incremento il suo valore di 1
     itemActive = 0;
+
     //aggiungere la class active al nuovo elemento dell'array items e la vado a rimuovere da quello precedente
     //stessa cosa per i cerchi
+
     items[itemActive].classList.add('active');
     circles[itemActive].classList.add('active');
 
     }
  
 });
+
+// ***************************************************
 
 prev.addEventListener('click', function(){
 
@@ -77,8 +87,10 @@ prev.addEventListener('click', function(){
         //verifico l'elemento attivo (itemActive)
         items[itemActive].classList.remove('active');
         circles[itemActive].classList.remove('active');
+
         //decremento il suo valore di 1
         itemActive--;
+
         //aggiungere la class active al nuovo elemento dell'array items e la vado a rimuovere da quello precedente
         //stessa cosa per i cerchi
         items[itemActive].classList.add('active');
@@ -91,8 +103,10 @@ prev.addEventListener('click', function(){
         //verifico l'elemento attivo (itemActive)
         items[itemActive].classList.remove('active');
         circles[itemActive].classList.remove('active');
+
         //decremento il suo valore di 1
         itemActive = imagesArray.length -1;
+
         //aggiungere la class active al nuovo elemento dell'array items e la vado a rimuovere da quello precedente
         //stessa cosa per i cerchi
         items[itemActive].classList.add('active');
